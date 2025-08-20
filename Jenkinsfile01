@@ -5,9 +5,9 @@ pipeline {
             steps {
                 sh 'echo Hola Mundo'
                 echo "Build number is ${currentBuild.number}"
-                echo "Branch name is ${BRANCH_NAME}"
-                echo "Job es ${JOB_NAME}"
-                echo "El Workspaces is ${WORKSPACE}"
+                echo "Branch name is ${env.BRANCH_NAME}"
+                echo "Job es ${env.JOB_NAME}"
+                echo "El Workspaces is ${env.WORKSPACE}"
             }
         }
     }
