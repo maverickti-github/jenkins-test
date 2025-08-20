@@ -4,7 +4,7 @@ pipeline {
         stage ('Test') {
             steps {
                 sh 'echo Hola Mundo'
-                echo "Build number is $(currentBuild.number)"
+                sh 'echo "Build number is $(currentBuild.number)"'
             }
         }
     }
