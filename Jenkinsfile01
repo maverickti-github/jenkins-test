@@ -1,6 +1,11 @@
 pipeline {
     agent any
     stages {
+        stage ('Checkout'){
+            steps {
+                checkout smc
+            }
+        }
         stage ('Test') {
             steps {
                 sh 'echo Hola Mundo'
